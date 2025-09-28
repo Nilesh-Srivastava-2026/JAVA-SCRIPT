@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+     <script>
+let ages = [17, 15, 18, 10, 25, 35, 22, 28, 30, 58, 50];
+document.write("<br> Total User Ages = " + ages.join(', ') + "<br>");
+
+function checkage(age) {
+   return age >= 18 && age <= 28; // Return age between 18-28
+}
+
+let b = ages.filter(checkage);
+document.write("age = " + b.join(', ') + "<br>");
+document.write("For Goverment Job Selected person of age is = " + b)
+    </script>
+</head>
+<body>
+</body>
+</html>
